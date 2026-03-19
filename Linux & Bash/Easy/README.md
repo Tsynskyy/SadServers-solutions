@@ -26,10 +26,44 @@ echo "Joe Germuska" > ~/mysolution
 
 ---
 
+## 4. "Resumable Server": Linux Upskill Challenge
+
+No challenge. Start and stop the server to complete
+
+---
+
+## 5. "Lhasa": Easy Math
+
+```bash
+awk '{sum += $2} END {printf "%.2f\n", sum/NR}' scores.txt > ~/solution
+```
+
+---
+
+## 6. "Apia": Needle in a Haystack
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
 ## 7. "Bata": Find in /proc
 
 ```bash
 grep -r "^secret:" /proc/sys 2>/dev/null | sed 's/.*secret://' > /home/admin/secret.txt
+```
+
+---
+
+## 8. Linux Server Review - Guided Learning
+
+No challenge. Start and stop the server to complete
+
+---
+
+## 9. "Tokamachi": Troubleshooting a Named Pipe
+
+```bash
+ToDo
 ```
 
 ---
