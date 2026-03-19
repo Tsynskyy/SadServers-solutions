@@ -18,6 +18,14 @@ awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -1 | awk '{print 
 
 ---
 
+## 3. "The Command Line Murders"
+
+```bash
+echo "Joe Germuska" > ~/mysolution
+```
+
+---
+
 ## 7. "Bata": Find in /proc
 
 ```bash
