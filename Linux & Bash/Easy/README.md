@@ -63,7 +63,17 @@ No challenge. Start and stop the server to complete
 ## 9. "Tokamachi": Troubleshooting a Named Pipe
 
 ```bash
-ToDo
+/bin/bash -c 'while true; do echo "this is a test message being sent to the pipe" > /home/admin/namedpipe; sleep 5; done' &
+```
+
+---
+
+## 14. "Cairo": Time for a Timer
+
+```bash
+sudo iptables -D OUTPUT 1
+
+sudo systemctl enable --now health.timer
 ```
 
 ---
