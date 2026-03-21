@@ -68,6 +68,30 @@ No challenge. Start and stop the server to complete
 
 ---
 
+## 10. "Yokohama": Linux Users Working Together
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
+## 11. "Fukuoka": Forbidden Association
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
+## 12. "Rio de Janeiro": Do we have another option?
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
+## 13. "Nuuk": More SSH Troubles
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
 ## 14. "Cairo": Time for a Timer
 
 ```bash
@@ -87,3 +111,11 @@ echo "* * * * * /opt/backup/backup.sh" | sudo crontab -u root -
 
 sudo /opt/backup/backup.sh
 ```
+
+---
+
+## 16. "Kortenberg": Can't touch this!
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
