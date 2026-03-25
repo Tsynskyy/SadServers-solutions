@@ -61,3 +61,33 @@ sudo chown admin:admin /home/admin/data
 ```
 
 ---
+
+## 7. "Paris": Where is my webserver?
+
+```bash
+echo "FDZPmh5AX3oiJt" > ~/mysolution
+```
+
+---
+
+## 8. "Marrakech": Word Histogram
+
+```bash
+grep -oE '[[:alpha:]]+' frankestein.txt | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -nr | head -n 2 | tail -n 1 | awk '{print $2}' | tr '[:lower:]' '[:upper:]' > /home/admin/mysolution
+```
+
+---
+
+## 9. "Manado": How much do you press?
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
+## 10. "Moyogalpa": Security Snag. The Trials of Mary and John
+
+```bash
+
+```
+
+---
