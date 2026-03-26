@@ -87,7 +87,55 @@ This scenario is only available to Pro or Business users and Im not ready to pay
 ## 10. "Moyogalpa": Security Snag. The Trials of Mary and John
 
 ```bash
+sudo chown -vR webapp:webapp /home/webapp/pki
+sudo chmod -v 0600 /home/webapp/pki/server.crt /home/webapp/pki/server.pem
 
+sudo chown -Rv webapp:webapp /home/webapp/static-files
+sudo chmod -Rv 0640 /home/webapp/static-files/*
+
+sudo cp -v /home/webapp/pki/CA.crt /usr/local/share/ca-certificates/CA.crt
+sudo chmod 0644 /usr/local/share/ca-certificates/CA.crt
+sudo update-ca-certificates
+
+echo '127.0.10.1 webapp' | sudo tee -a /etc/hosts
+
+sudo sed -i '/^}/i\  /home\/webapp\/static-files\/ r,\n  /home\/webapp\/static-files\/* r,' /etc/apparmor.d/usr.local.bin.webapp
+sudo apparmor_parser -r /etc/apparmor.d/usr.local.bin.webapp
+```
+
+---
+
+## 11. "Bekasi": Supervisor is still around
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
+## 12. "Tukaani": XZ LZMA Library Compromised
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
+## 13. "Hanoi": Find the Multitasking Users
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
+## 14. "Batumi": Troubleshoot "A" cannot connect to "B"
+
+This scenario is only available to Pro or Business users and Im not ready to pay for it :(
+
+---
+
+## 15. "Budapest": User Creation
+
+```bash
+while IFS=';' read -r login password; do
+  ENCRYPTED_PW=$(openssl passwd -1 "$password")
+  sudo useradd -m -p "$ENCRYPTED_PW" -s /usr/sbin/nologin "$login"
+done < user_list.txt
 ```
 
 ---
