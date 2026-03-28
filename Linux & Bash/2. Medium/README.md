@@ -139,3 +139,22 @@ done < user_list.txt
 ```
 
 ---
+
+## 16. "Tokelau": Delete from history
+
+```bash
+sed -i '/foo/d' ~/.bash_history
+sed -i '/bash_history/d' ~/.bash_history
+```
+
+---
+
+## 17. "Bizerte": The Slow Application
+
+```bash
+sudo sed -i 's/REDIS_HOST=127.0.0.2/REDIS_HOST=127.0.0.1/' /etc/systemd/system/slow-app.service
+sudo systemctl daemon-reload
+sudo systemctl restart slow-app
+```
+
+---
